@@ -1,0 +1,32 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 7%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99999;
+}
+
+.logo{
+    font-size: 32px;
+    color: #000;
+    font-weight: 700;
+}
+
+.navbar{
+    background-color: rgb(237, 235, 235);
+    padding: 10px 0px;
+    border-radius: 25px;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    margin-left: 40px;
+}
