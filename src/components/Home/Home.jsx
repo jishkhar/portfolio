@@ -11,7 +11,7 @@ import { faChartSimple } from '@fortawesome/free-solid-svg-icons/faChartSimple';
 function Home() {
 
   const [text] = useTypewriter({
-    words: [' Frontend Developer', ' Backend Developer', ' Competitive Programmer', ' Open Source Contributor'],
+    words: [' Frontend Developer', ' Competitive Programmer', ' Open Source Contributor', ' Backend Developer'],
     loop: true,
   });
 
@@ -22,8 +22,8 @@ function Home() {
     <section id="home" className='flex flex-col bg-pink-200 w-full h-fit py-44 items-center justify-center '>
       <h1 className='text-7xl pb-4'>Jishnu Khargharia</h1>
       
-      <h1 className='pb-16'>
-        <span className='text-4xl' style={{color: 'green'}}>
+      <h1 className='pb-16 text-4xl'>
+        <span style={{color: 'green'}}>
           {text}
         </span>
         <Cursor />

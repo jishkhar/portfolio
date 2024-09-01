@@ -1,10 +1,65 @@
 import React from 'react'
+import './Contact.css'
+import Swal from 'sweetalert2'
 
 function Contact() {
+
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "a9a5d84f-cd99-4bb5-88e3-450d2d771f65");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully",
+        icon: "success"
+      });
+    }
+  };
+
+
+
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. In commodi itaque tenetur reiciendis necessitatibus! Consectetur aperiam voluptas fuga provident, dolores officiis impedit quasi aliquid reiciendis nostrum asperiores commodi ipsum nihil minima saepe laboriosam excepturi hic debitis quod fugiat libero doloribus laborum. Quae fugiat voluptatem expedita doloremque aliquam, soluta tenetur aspernatur.
-    </div>
+    <section id='contact'>
+        <section className="contact">
+          <form onSubmit={onSubmit}>
+            <h2>Contact</h2>
+
+            <div className="input-box">
+              <label>Full Name</label>
+              <input type="text" className="field" placeholder='Enter your name' name='name' required />
+            </div>
+
+            <div className="input-box">
+              <label>Email Address</label>
+              <input type="email" className="field" placeholder='Enter your email' name='email' required />
+            </div>
+
+            <div className="input-box">
+              <label>Your Message</label>
+              <textarea name="message" className='field mess' placeholder='Enter your message' required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+          </form>
+        </section>
+    </section>
   )
 }
 
