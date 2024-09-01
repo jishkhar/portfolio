@@ -2,9 +2,16 @@ import React from 'react'
 
 function About() {
   return (
-    <div>
-      
-    </div>
+    <section id="about">
+
+      <div className='flex '>
+        <div className='bg-red-600 h-screen w-5/12'>Left</div>
+        <div className='bg-yellow-400 h-screen w-7/12'>
+          
+        </div>
+      </div>
+
+    </section>
   )
 }
 
