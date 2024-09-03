@@ -14,7 +14,7 @@ function About() {
     <section id="about">
 
       <div className='flex py-48'>
-        <div className=' h-fit w-5/12 flex items-center pl-44'>
+        <div className=' h-fit w-5/12 flex items-center pl-44 pt-12'>
           <img className='rounded-full h-96' src={jk} alt="" />
         </div>
         <div className='h-fit w-7/12 pr-56 pl-10'>
@@ -51,9 +51,19 @@ function About() {
               icon={faChartSimple}
               className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
             />
-            <FontAwesomeIcon icon={faDiscord} className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500" />
-            <FontAwesomeIcon icon={faInstagram} className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500" />
-            <FontAwesomeIcon icon={faEnvelope} className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500" />
+            <FontAwesomeIcon 
+              icon={faEnvelope} 
+              className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500" 
+            />
+            <FontAwesomeIcon 
+              icon={faDiscord} 
+              className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500" 
+            />
+            <FontAwesomeIcon 
+              icon={faInstagram} 
+              className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500" 
+            />
+            
           </div>
 
         </div>

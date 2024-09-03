@@ -1,17 +1,18 @@
 import React from 'react'
+import './Skills.css'
 
 function Skills() {
   return (
-    <section id="skills">
-      <div className=' h-screen flex p-32 justify-center'>
+    <section id="skills" className='skills'>
+      <div className=' h-screen flex p-24 justify-center'>
         <div className='text-center'>
           <h1 className='text-6xl mb-5'>Tech Stacks</h1>
           <p className='text-2xl'>Here are some of the skills that I have been working on in the past year.</p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-20">
-            <div className="card bg-gray-200 p-4 text-center rounded">
-              <h1>Languages</h1>
-              <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-14">
+            <div className="card  p-4 text-center">
+              <h1 className='hh'>Languages</h1>
+              <div className='sp grid grid-cols-1 sm:grid-cols-4 gap-1   p-3'>
                 <span>c++</span>
                 <span>C</span>
                 <span>Javascript</span>
@@ -19,37 +20,37 @@ function Skills() {
                 <span>Python</span>
               </div>
             </div>
-            <div className="card bg-gray-200 p-4 text-center rounded">
-              <h1>Frontend</h1>
-              <div>
+            <div className="card  p-4 text-center">
+              <h1 className='hh'>Frontend</h1>
+              <div className='sp grid grid-cols-1 sm:grid-cols-4 gap-3   justify-center p-3'>
                 <span>React</span>
-                <span>React Router Dom</span>
                 <span>Tailwind Css</span>
                 <span>React Scroll</span>
                 <span>Bootstrap</span>
                 <span>HTML</span>
                 <span>CSS</span>
+                <span className='w-44'>React Router Dom</span>
               </div>
             </div>
-            <div className="card bg-gray-200 p-4 text-center rounded">
-              <h1>Backend</h1>
-              <div>
+            <div className="card  p-4 text-center">
+              <h1 className='hh'>Backend</h1>
+              <div className='sp grid grid-cols-1   sm:grid-cols-4 gap-1 p-3'>
                 <span>Node</span>
                 <span>Express</span>
                 <span>Axios</span>
                 <span>Mongoose</span>
               </div>
             </div>
-            <div className="card bg-gray-200 p-4 text-center rounded">
-              <h1>Databases</h1>
-              <div>
+            <div className="card  p-4 text-center">
+              <h1 className='hh'>Databases</h1>
+              <div className='sp grid grid-cols-1 sm:grid-cols-4 gap-1   p-3'>
                 <span>MySQL</span>
                 <span>MongoDB</span>
               </div>
             </div>
-            <div className="card bg-gray-200 p-4 text-center rounded">
-              <h1>Dev Tools</h1>
-              <div>
+            <div className="card  p-4 text-center">
+              <h1 className='hh'>Dev Tools</h1>
+              <div className='sp grid grid-cols-1 sm:grid-cols-4 gap-1   p-3'>
                 <span>Git</span>
                 <span>GitHub</span>
                 <span>Framer Motion</span>

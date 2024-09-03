@@ -1,6 +1,11 @@
 import React from 'react'
 import './Contact.css'
 import Swal from 'sweetalert2'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function Contact() {
 
@@ -36,29 +41,48 @@ function Contact() {
 
   return (
     <section id='contact'>
-        <section className="contact">
-          <form onSubmit={onSubmit}>
-            <h2>Contact</h2>
+      <section className="contact flex flex-col">
+        <h2 className='text-6xl pt-16'>Contact</h2>
+        <form onSubmit={onSubmit}>
 
-            <div className="input-box">
-              <label>Full Name</label>
-              <input type="text" className="field" placeholder='Enter your name' name='name' required />
-            </div>
+          <div className="input-box">
+            <label>Full Name</label>
+            <input type="text" className="field" name='name' required />
+          </div>
 
-            <div className="input-box">
-              <label>Email Address</label>
-              <input type="email" className="field" placeholder='Enter your email' name='email' required />
-            </div>
+          <div className="input-box">
+            <label>Email Address</label>
+            <input type="email" className="field" name='email' required />
+          </div>
 
-            <div className="input-box">
-              <label>Your Message</label>
-              <textarea name="message" className='field mess' placeholder='Enter your message' required></textarea>
-            </div>
+          <div className="input-box">
+            <label>Your Message</label>
+            <textarea name="message" className='field mess' required></textarea>
+          </div>
 
-            <button type="submit">Send Message</button>
+          <button type="submit">Send Message</button>
 
-          </form>
-        </section>
+        </form>
+
+        <div>
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="h-7 pl-1 pr-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
+          />
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
+          />
+          <FontAwesomeIcon
+            icon={faXTwitter}
+            className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
+          />
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500" />
+        </div>
+
+      </section>
     </section>
   )
 }

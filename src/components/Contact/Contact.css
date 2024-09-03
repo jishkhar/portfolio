@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .contact{
     display: flex;
     justify-content: center;
@@ -14,16 +9,11 @@ form{
     max-width: 600px;
     width: 100%;
     background: #fff;
-    padding: 25px 25px 30px;
+    padding: 10px 10px 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #333;
     margin: 25px;
-}
-
-form h2{
-    font-size: 30px;
-    text-align: center;
 }
 
 form .input-box{
@@ -44,14 +34,14 @@ form .input-box{
 }
 
 .input-box .field.mess{
-    height: 170px;
+    height: 120px;
     resize: none;
 }
 
 form button{
     width: 100%;
     height: 55px;
-    background-color: #826afb;
+    background-color: #2fc6de;
     border: none;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -64,5 +54,5 @@ form button{
 }
 
 form button:hover{
-    background-color: #624ec6;
+    background-color: rgb(34, 178, 255);
 }
