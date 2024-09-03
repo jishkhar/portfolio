@@ -55,10 +55,10 @@ function Home() {
 
 
       <div className="info">
-        <button className="bg-blue-400 rounded-3xl px-9 py-4 mr-5 transition transform duration-300 hover:scale-105">
+        <button className="border-black border-2 rounded-3xl px-9 py-4 mr-5 transition transform duration-300 hover:scale-105">
           Download Resume
         </button>
-        <button className="bg-blue-400 rounded-3xl px-9 py-4 transition transform duration-300 hover:scale-105">
+        <button className="border-black border-2 rounded-3xl px-9 py-4 transition transform duration-300 hover:scale-105">
           Get In Touch
         </button>
       </div>
