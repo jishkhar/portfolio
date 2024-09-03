@@ -65,21 +65,31 @@ function Contact() {
         </form>
 
         <div>
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="h-7 pl-1 pr-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
-          />
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
-          />
-          <FontAwesomeIcon
-            icon={faXTwitter}
-            className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
-          />
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500" />
+          <a href="https://github.com/jishkhar" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="h-7 pl-1 pr-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/jishnukhargharia" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
+            />
+          </a>
+          <a href="https://x.com/JishKhar_" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon
+              icon={faXTwitter}
+              className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
+            />
+          </a>
+          <a href="mailto:jishnukhargharia11@gmail.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
+            />
+          </a>
+
         </div>
 
       </section>

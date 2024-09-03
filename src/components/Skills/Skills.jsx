@@ -9,7 +9,7 @@ function Skills() {
           <h1 className='text-6xl mb-5'>Tech Stacks</h1>
           <p className='text-2xl'>Here are some of the skills that I have been working on in the past year.</p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-14">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-10">
             <div className="card  p-4 text-center">
               <h1 className='hh'>Languages</h1>
               <div className='sp grid grid-cols-1 sm:grid-cols-4 gap-1   p-3'>
@@ -55,6 +55,7 @@ function Skills() {
                 <span>GitHub</span>
                 <span>Framer Motion</span>
                 <span>Figma</span>
+                <span>Vercel</span>
               </div>
             </div>
 
