@@ -5,7 +5,6 @@ import Skills from './components/Skills/Skills.jsx'
 import Projects from './components/Projects/Projects.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import Home from './components/Home/Home.jsx'
-import Footer from './components/Footer/Footer.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
         <Projects />
         <Contact />
       </BrowserRouter>
-      {/* <Footer /> */}
+      
     </>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import { HashLink as Link } from 'react-router-hash-link'
+import { NavHashLink as Link } from 'react-router-hash-link'
 
 function Header() {
   return (

@@ -19,7 +19,7 @@ function Home() {
   
   return (
     
-    <section id="home" className='flex flex-col bg-pink-200 w-full h-fit py-44 items-center justify-center '>
+    <section id="home" className='flex flex-col w-full h-fit py-44 items-center justify-center '>
       <h1 className='text-7xl pb-4'>Jishnu Khargharia</h1>
       
       <h1 className='pb-16 text-4xl'>
