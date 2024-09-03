@@ -18,11 +18,11 @@ function About() {
           <img className='rounded-full h-96' src={jk} alt="" />
         </div>
         <div className='h-fit w-7/12 pr-56 pl-10'>
-          <h1 className='text-5xl'>A little bit</h1>
-          <h1 className='text-5xl pb-8'>about me</h1>
+          <h1 className='text-6xl'>A little bit</h1>
+          <h1 className='text-6xl pb-8'>about me</h1>
 
           <section className='text-lg'>
-            <h2 className='mb-4'>Hello! I'm Jishnu Khargharia, </h2>
+            <h2 className='mb-4 text-2xl'>Hello! I'm Jishnu Khargharia, </h2>
             <p className='pb-2'>
               A Full Stack Developer currently pursuing my studies at Siddaganga Institute of Technology. I am passionate about developing cutting-edge web applications that boost lead generation and improve user engagement.
             </p>

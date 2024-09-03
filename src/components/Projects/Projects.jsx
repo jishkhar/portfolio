@@ -136,9 +136,11 @@ function Projects() {
             </div>
           </div>
 
-          <button className='text-2xl mt-9 bg-gray-200 rounded-3xl py-2 px-4 transition-transform duration-300 hover:scale-105 hover:bg-gray-300'>
-            More Projects
-          </button>
+          <a href="https://github.com/jishkhar?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <button className='text-2xl mt-9 bg-gray-200 rounded-3xl py-2 px-4 transition-transform duration-300 hover:scale-105 hover:bg-gray-300'>
+              More Projects
+            </button>
+          </a>
 
         </div>
       </div>

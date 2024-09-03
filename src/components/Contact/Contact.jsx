@@ -42,7 +42,7 @@ function Contact() {
   return (
     <section id='contact'>
       <section className="contact flex flex-col">
-        <h2 className='text-6xl pt-16'>Contact</h2>
+        <h1 className='text-6xl pt-16'>Contact</h1>
         <form onSubmit={onSubmit}>
 
           <div className="input-box">

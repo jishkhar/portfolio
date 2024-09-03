@@ -34,7 +34,7 @@ function Home() {
         Full Stack Developer crafting seamless web experiences
       </p>
 
-      <div className="pb-20">
+      <div className="pb-12">
         <a href="https://github.com/jishkhar" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
             icon={faGithub}
@@ -67,11 +67,11 @@ function Home() {
 
 
       <div className="info">
-        <button className="border-black border-2 rounded-3xl px-9 py-4 mr-5 transition transform duration-300 hover:scale-105">
+        <button className="border-black border-2 rounded-3xl px-9 py-4 mr-5 transition transform duration-300 hover:scale-105 text-lg">
           Resume
         </button>
         <Link to="#contact" smooth>
-        <button className="border-black border-2 rounded-3xl px-9 py-4 transition transform duration-300 hover:scale-105">
+        <button className="border-black border-2 rounded-3xl px-9 py-4 transition transform duration-300 hover:scale-105 text-lg">
           Get In Touch
         </button>
         </Link>

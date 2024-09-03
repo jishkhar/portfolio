@@ -12,19 +12,19 @@ function Header() {
                 <ul>
 
                   <li>
-                    <Link to="#about" smooth>About</Link>
+                    <Link    to="#about" smooth>About</Link>
                   </li>
 
                   <li>
-                    <Link to="#skills" smooth>Skills</Link>
+                    <Link   to="#skills" smooth>Skills</Link>
                   </li>
 
                   <li>
-                    <Link to="#projects" smooth>Projects</Link>
+                    <Link   to="#projects" smooth>Projects</Link>
                   </li>
 
                   <li>
-                    <Link to="#contact" smooth>Contact</Link>
+                    <Link   to="#contact" smooth>Contact</Link>
                   </li>
 
                 </ul>
