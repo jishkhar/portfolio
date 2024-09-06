@@ -1,39 +1,102 @@
-import React from 'react'
-import './Header.css'
-import { NavHashLink as Link } from 'react-router-hash-link'
+import React, { useState } from 'react';
+import { NavHashLink as Link } from 'react-router-hash-link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
+import { faX } from '@fortawesome/free-solid-svg-icons/faX';
 
 function Header() {
+  const [activeLink, setActiveLink] = useState('');
+  const [icon, setIcon] = useState(faBars);
+  const [navOpen, setNavOpen] = useState(false);
+
+  const handleClick = (link) => {
+    setActiveLink(link);
+  };
+
+  const toggleNav = () => {
+    setIcon(prevIcon => (prevIcon === faBars ? faX : faBars));
+    setNavOpen(prevNavOpen => !prevNavOpen);
+  };
+
   return (
     <>
-      <header className="header">
-            <Link to="#home" className='logo'>JK</Link>
+      <header className="header mx-auto">
+        <nav className='flex justify-between items-center w-[80%] my-[2.5vh] fixed lg:left-48 md:left-24 left-10'>
+          <div>
+            <Link to="#home" className='text-2xl font-bold' onClick={() => handleClick('')}>JK</Link>
+          </div>
 
-            <nav className="navbar">
-                <ul>
+          <div className={` md:static fixed left-0 text-xl bg-gray-100 md:rounded-full py-[2vh] px-[1vw] md:min-h-fit min-h-[26vh] ${navOpen ? 'top-[8%]' : 'top-[-100%]'} md:w-auto w-full transition-all duration-500 ease-in-out`}>
+            <ul className='flex md:flex-row flex-col items-center md:gap-[0.5vw] gap-6'>
 
-                  <li>
-                    <Link    to="#about" smooth>About</Link>
-                  </li>
+              <li>
+                <Link 
+                  className={`text-black py-[1vh] px-7 rounded-full ${activeLink === 'about' ? 'bg-blue-500' : 'hover:bg-blue-500'}`}
+                  to="#about"
+                  smooth
+                  onClick={() => {
+                    handleClick('about');
+                    toggleNav();
+                  }}
+                >
+                  About
+                </Link>
+              </li>
 
-                  <li>
-                    <Link   to="#skills" smooth>Skills</Link>
-                  </li>
+              <li>
+                <Link
+                  className={`text-black  py-[1vh] px-7 rounded-full  ${activeLink === 'skills' ? 'bg-blue-500' : 'hover:bg-blue-500'}`}
+                  to="#skills"
+                  smooth
+                  onClick={() => {
+                    handleClick('skills');
+                    toggleNav();
+                  }}
+                >
+                  Skills
+                </Link>
+              </li>
 
-                  <li>
-                    <Link   to="#projects" smooth>Projects</Link>
-                  </li>
+              <li>
+                <Link
+                  className={`text-black py-[1vh] px-7 rounded-full  ${activeLink === 'projects' ? 'bg-blue-500' : 'hover:bg-blue-500'}`}
+                  to="#projects"
+                  smooth
+                  onClick={() => {
+                    handleClick('projects');
+                    toggleNav();
+                  }}
+                >
+                  Projects
+                </Link>
+              </li>
 
-                  <li>
-                    <Link   to="#contact" smooth>Contact</Link>
-                  </li>
+              <li>
+                <Link
+                  className={`text-black py-[1vh] px-7 rounded-full  ${activeLink === 'contact' ? 'bg-blue-500' : 'hover:bg-blue-500'}`}
+                  to="#contact"
+                  smooth
+                  onClick={() => {
+                    handleClick('contact');
+                    toggleNav()
+                  }}
+                >
+                  Contact
+                </Link>
+              </li>
 
-                </ul>
-            </nav>
+            </ul>
+          </div>
+        
 
-            <div className='text-2xl font-bold'>D/N</div>
-        </header>
+          <div onClick={toggleNav}>
+            <FontAwesomeIcon icon={icon} style={{ cursor: 'pointer' }} className='md:hidden h-6 flex items-center justify-center' />
+          </div>
+
+        </nav>
+      </header>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

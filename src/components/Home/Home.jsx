@@ -24,7 +24,7 @@ function Home() {
         <Cursor />
       </h1>
 
-      <p className="text-lg sm:text-xl md:text-2xl pb-8 sm:pb-10">
+      <p className="text-lg sm:text-xl md:text-2xl pb-8 sm:pb-10 mx-10">
         Full Stack Developer trying to build innovative and user-friendly applications.
       </p>
 

@@ -10,7 +10,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function About() {
   return (
-    <section id="about" className="py-28 sm:py-48 h-fit flex justify-center items-center">
+    <section id="about" className="py-28 sm:py-48 h-screen flex justify-center items-center">
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center px-6 lg:px-20">
         <div className="w-full lg:w-5/12 flex justify-center lg:justify-center mb-8 lg:mb-0">
           <img
@@ -23,7 +23,7 @@ function About() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold">A little bit</h1>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl pb-8 sm:pb-10 lg:pb-10 font-semibold">about me</h1>
 
-          <section className="text-base sm:text-lg lg:text-xl lg:pr-44">
+          <section className="text-base sm:text-lg lg:text-xl lg:pr-44 sm:mx-4">
             <h2 className="mb-4 text-xl sm:text-2xl lg:text-3xl font-semibold">Hello! I'm Jishnu Khargharia,</h2>
             <p className="pt-3 pb-7">
               A Full Stack Developer currently pursuing engineering in Computer Science and Artificial Intelligence Machine Learning. I am passionate about developing cutting-edge web applications that boost lead generation and improve user engagement.
