@@ -32,8 +32,8 @@ function Skills() {
             <div className='flex flex-wrap justify-center gap-4'>
               {[{ src: cpp, label: 'C++' }, { src: c, label: 'C' }, { src: py, label: 'Python' }, { src: js, label: 'JavaScript' }, { src: ts, label: 'TypeScript' }].map((item, index) => (
                 <div key={index} className='flex items-center gap-2'>
-                  <img src={item.src} alt={item.label} className='w-12 h-12' />
-                  <span className='text-lg'>{item.label}</span>
+                  <img src={item.src} alt={item.label} className='w-8 h-8 md:w-12 md:h-12' />
+                  <span className='text-md md:text-lg'>{item.label}</span>
                 </div>
               ))}
             </div>
@@ -44,8 +44,8 @@ function Skills() {
             <div className='flex flex-wrap justify-center gap-4'>
               {[{ src: re, label: 'React' }, { src: tw, label: 'Tailwind CSS' }, { src: re, label: 'React Router Dom' }, { src: re, label: 'React Scroll' }, { src: html, label: 'HTML' }, { src: css, label: 'CSS' }].map((item, index) => (
                 <div key={index} className='flex items-center gap-2'>
-                  <img src={item.src} alt={item.label} className='w-12 h-12' />
-                  <span className='text-lg'>{item.label}</span>
+                  <img src={item.src} alt={item.label} className='w-8 h-8 md:w-12 md:h-12' />
+                  <span className='text-md md:text-lg'>{item.label}</span>
                 </div>
               ))}
             </div>
@@ -56,8 +56,8 @@ function Skills() {
             <div className='flex flex-wrap justify-center gap-4'>
               {[{ src: nd, label: 'Node.js' }, { src: ex, label: 'Express' }, { src: mongoose, label: 'Mongoose' }, { src: mdb, label: 'MongoDB' }].map((item, index) => (
                 <div key={index} className='flex items-center gap-2'>
-                  <img src={item.src} alt={item.label} className='w-12 h-12' />
-                  <span className='text-lg'>{item.label}</span>
+                  <img src={item.src} alt={item.label} className='w-8 h-8 md:w-12 md:h-12' />
+                  <span className='text-md md:text-lg'>{item.label}</span>
                 </div>
               ))}
             </div>
@@ -68,15 +68,13 @@ function Skills() {
             <div className='flex flex-wrap justify-center gap-4'>
               {[{ src: gt, label: 'Git' }, { src: gth, label: 'GitHub' }, { src: fgm, label: 'Figma' }, { src: fra, label: 'Framer Motion' }].map((item, index) => (
                 <div key={index} className='flex items-center gap-2'>
-                  <img src={item.src} alt={item.label} className='w-12 h-12' />
-                  <span className='text-lg'>{item.label}</span>
+                  <img src={item.src} alt={item.label} className='w-8 h-8 md:w-12 md:h-12' />
+                  <span className='text-md md:text-lg'>{item.label}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
   );
