@@ -37,7 +37,7 @@ function Contact() {
   return (
     <section id='contact'>
       <section className="contact flex flex-col">
-        <h1 className='text-6xl font-semibold'>Contact</h1>
+        <h1 className='text-4xl md:text-5xl lg:text-6xl  font-semibold'>Contact</h1>
         <form onSubmit={onSubmit} className='mt-12'>
 
           <div className="input-box">

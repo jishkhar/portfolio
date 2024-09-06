@@ -21,7 +21,7 @@ function Skills() {
   return (
     <section id="skills" className='py-16 px-4 md:px-8 lg:px-16'>
       <div className='text-center'>
-        <h1 className='text-3xl font-semibold md:text-4xl lg:text-5xl mt-20 mb-7'>Tech Stacks</h1>
+        <h1 className='text-4xl font-semibold md:text-5xl lg:text-6xl mt-20 mb-7'>Tech Stacks</h1>
         <p className='text-lg md:text-xl lg:text-2xl mb-28'>
           Here are some of the skills that I have been working on in the past year.
         </p>

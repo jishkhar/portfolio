@@ -9,7 +9,7 @@ function Projects() {
 
       <div className='container mx-auto px-4'>
         <div className='text-center'>
-          <h1 className='text-4xl sm:text-6xl mb-20 font-semibold'>Projects</h1>
+          <h1 className='text-4xl md:text-5xl lg:text-6xl mb-20 font-semibold'>Projects</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
             <div className="card bg-white shadow-md rounded-lg p-6 text-center">
