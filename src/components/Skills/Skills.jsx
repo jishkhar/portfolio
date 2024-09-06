@@ -3,7 +3,7 @@ import './Skills.css'
 
 function Skills() {
   return (
-    <section id="skills" className='skills h-fit'>
+    <section id="skills" className='skills h-fit py-16'>
       <div className=' h-fit flex p-20 justify-center'>
         <div className='text-center'>
           <h1 className='text-6xl mb-5'>Tech Stacks</h1>

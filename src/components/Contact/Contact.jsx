@@ -1,11 +1,6 @@
 import React from 'react'
 import './Contact.css'
 import Swal from 'sweetalert2'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function Contact() {
 
@@ -42,8 +37,8 @@ function Contact() {
   return (
     <section id='contact'>
       <section className="contact flex flex-col">
-        <h1 className='text-6xl pt-16'>Contact</h1>
-        <form onSubmit={onSubmit}>
+        <h1 className='text-6xl'>Contact</h1>
+        <form onSubmit={onSubmit} className='mt-12'>
 
           <div className="input-box">
             <label>Full Name</label>
@@ -63,34 +58,6 @@ function Contact() {
           <button type="submit">Send Message</button>
 
         </form>
-
-        <div>
-          <a href="https://github.com/jishkhar" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="h-7 pl-1 pr-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/jishnukhargharia" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
-            />
-          </a>
-          <a href="https://x.com/JishKhar_" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon
-              icon={faXTwitter}
-              className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
-            />
-          </a>
-          <a href="mailto:jishnukhargharia11@gmail.com" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="h-7 px-6 transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-blue-500"
-            />
-          </a>
-
-        </div>
 
       </section>
     </section>

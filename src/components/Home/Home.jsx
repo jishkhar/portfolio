@@ -9,13 +9,13 @@ import { NavHashLink as Link } from 'react-router-hash-link';
 
 function Home() {
   const [text] = useTypewriter({
-    words: ['Frontend Developer', 'Competitive Programmer', 'Open Source Contributor', 'Backend Developer'],
+    words: ['Full Stack Developer', 'Competitive Programmer'],
     loop: true,
   });
 
   return (
     <section id="home" className="flex flex-col items-center justify-center w-full h-screen py-32 sm:py-44 text-center">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-4">Jishnu Khargharia</h1>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-6">Jishnu Khargharia</h1>
 
       <h1 className="pb-8 sm:pb-12 md:pb-16 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">
         <span style={{ color: 'green' }}>
@@ -25,7 +25,7 @@ function Home() {
       </h1>
 
       <p className="text-lg sm:text-xl md:text-2xl pb-8 sm:pb-10">
-        Full Stack Developer crafting seamless web experiences
+        Full Stack Developer trying to build innovative and user-friendly applications.
       </p>
 
       <div className="pb-10 sm:pb-12 flex space-x-4 sm:space-x-6">
