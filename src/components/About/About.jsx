@@ -10,7 +10,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function About() {
   return (
-    <section id="about" className="py-28 sm:py-48 h-screen flex justify-center items-center">
+    <section id="about" className="py-28 sm:py-48 h-fit flex justify-center items-center">
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center px-6 lg:px-20">
         <div className="w-full lg:w-5/12 flex justify-center lg:justify-center mb-8 lg:mb-0">
           <img
