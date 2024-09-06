@@ -3,8 +3,8 @@ import './Skills.css'
 
 function Skills() {
   return (
-    <section id="skills" className='skills'>
-      <div className=' h-screen flex p-20 justify-center'>
+    <section id="skills" className='skills h-fit'>
+      <div className=' h-fit flex p-20 justify-center'>
         <div className='text-center'>
           <h1 className='text-6xl mb-5'>Tech Stacks</h1>
           <p className='text-2xl'>Here are some of the skills that I have been working on in the past year.</p>
