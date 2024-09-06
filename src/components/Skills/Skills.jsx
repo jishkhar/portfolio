@@ -19,10 +19,10 @@ import fra from '../../images/fra.png';
 
 function Skills() {
   return (
-    <section id="skills" className='py-16 px-4 md:px-8 lg:px-16'>
+    <section id="skills" className='py-16 px-4 md:px-8 lg:px-32'>
       <div className='text-center'>
         <h1 className='text-4xl font-semibold md:text-5xl lg:text-6xl mt-20 mb-7'>Tech Stacks</h1>
-        <p className='text-lg md:text-xl lg:text-2xl mb-28'>
+        <p className='text-lg md:text-xl lg:text-2xl md:mb-28 sm:mb-20  mb-16'>
           Here are some of the skills that I have been working on in the past year.
         </p>
 
