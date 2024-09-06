@@ -56,3 +56,28 @@ form button{
 form button:hover{
     font-size: 18px;
 }
+
+
+
+.contact {
+    padding: 20px; /* Adjust as needed */
+}
+  
+.contact form {
+    margin: 40px auto; /* Center the form by default */
+    max-width: 600px; /* Set a max width for larger screens */
+}
+  
+  /* Add responsive margins */
+@media (max-width: 768px) {
+    .contact form {
+      margin: 40px 20px; /* Add horizontal margins on smaller screens */
+    }
+}
+  
+@media (max-width: 480px) {
+    .contact form {
+      margin: 40px 10px; /* Add smaller horizontal margins on very small screens */
+    }
+}
+  

@@ -9,9 +9,9 @@ function Projects() {
 
       <div className='container mx-auto px-4'>
         <div className='text-center'>
-          <h1 className='text-4xl sm:text-6xl mb-8 font-bold'>Projects</h1>
+          <h1 className='text-4xl sm:text-6xl mb-20 font-semibold'>Projects</h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
             <div className="card bg-white shadow-md rounded-lg p-6 text-center">
               <div className='flex justify-between items-center'>
                 <h2 className='text-xl sm:text-2xl font-bold'>Todo App</h2>
@@ -118,7 +118,7 @@ function Projects() {
           </div>
 
           <a href="https://github.com/jishkhar?tab=repositories" target="_blank" rel="noopener noreferrer">
-            <button className='text-lg sm:text-2xl mt-12 bg-gray-200 rounded-3xl py-2 px-6 transition-transform duration-300 hover:scale-105 hover:bg-gray-300'>
+            <button className='text-lg sm:text-2xl mt-20 bg-gray-200 rounded-3xl py-2 px-6 transition-transform duration-300 hover:scale-105 hover:bg-gray-300'>
               More Projects
             </button>
           </a>
