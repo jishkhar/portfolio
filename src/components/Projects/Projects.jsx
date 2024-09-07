@@ -5,7 +5,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons/faAr
 
 function Projects() {
   return (
-    <section id='projects' className='min-h-screen flex items-center py-12 bg-gray-100'>
+    <section id='projects' className='min-h-fit flex items-center py-32 bg-gray-100'>
 
       <div className='container mx-auto px-4'>
         <div className='text-center'>
