@@ -44,7 +44,7 @@ function Header() {
               <li>
                 <Link
                   className={`text-black py-[1vh] px-7 rounded-full ${
-                    activeLink === 'about' ? 'bg-cyan-200' : 'hover:bg-cyan-200'
+                    activeLink === 'about' ? 'bg-white' : 'hover:bg-white'
                   }`}
                   to="#about"
                   smooth
@@ -59,7 +59,7 @@ function Header() {
               <li>
                 <Link
                   className={`text-black py-[1vh] px-7 rounded-full  ${
-                    activeLink === 'skills' ? 'bg-cyan-200' : 'hover:bg-cyan-200'
+                    activeLink === 'skills' ? 'bg-white' : 'hover:bg-white'
                   }`}
                   to="#skills"
                   smooth
@@ -74,7 +74,7 @@ function Header() {
               <li>
                 <Link
                   className={`text-black py-[1vh] px-7 rounded-full  ${
-                    activeLink === 'projects' ? 'bg-cyan-200' : 'hover:bg-cyan-200'
+                    activeLink === 'projects' ? 'bg-white' : 'hover:bg-white'
                   }`}
                   to="#projects"
                   smooth
@@ -89,7 +89,7 @@ function Header() {
               <li>
                 <Link
                   className={`text-black py-[1vh] px-7 rounded-full  ${
-                    activeLink === 'contact' ? 'bg-cyan-200' : 'hover:bg-cyan-200'
+                    activeLink === 'contact' ? 'bg-white' : 'hover:bg-white'
                   }`}
                   to="#contact"
                   smooth
