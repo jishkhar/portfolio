@@ -3,35 +3,49 @@ import { NavHashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import { faX } from '@fortawesome/free-solid-svg-icons/faX';
+import { faMoon } from '@fortawesome/free-regular-svg-icons';
+import { faSun } from '@fortawesome/free-regular-svg-icons'; // Import faSun icon
 
 function Header() {
   const [activeLink, setActiveLink] = useState('');
   const [icon, setIcon] = useState(faBars);
   const [navOpen, setNavOpen] = useState(false);
+  const [themeIcon, setThemeIcon] = useState(faMoon); // Add state for theme icon
 
   const handleClick = (link) => {
     setActiveLink(link);
   };
 
   const toggleNav = () => {
-    setIcon(prevIcon => (prevIcon === faBars ? faX : faBars));
-    setNavOpen(prevNavOpen => !prevNavOpen);
+    setIcon((prevIcon) => (prevIcon === faBars ? faX : faBars));
+    setNavOpen((prevNavOpen) => !prevNavOpen);
+  };
+
+  const toggleThemeIcon = () => {
+    setThemeIcon((prevIcon) => (prevIcon === faMoon ? faSun : faMoon)); // Toggle between faMoon and faSun
   };
 
   return (
     <>
       <header className="header mx-auto">
-        <nav className='flex justify-between items-center w-[80%] my-[2.5vh] fixed lg:left-48 md:left-24 left-10'>
+        <nav className="flex justify-between items-center w-[80%] my-[2.5vh] fixed lg:left-48 md:left-24 left-10">
           <div>
-            <Link to="#home" className='text-2xl font-bold' onClick={() => handleClick('')}>JK</Link>
+            <Link to="#home" className="text-2xl font-bold" onClick={() => handleClick('')}>
+              JK
+            </Link>
           </div>
 
-          <div className={` md:static fixed left-0 text-xl bg-gray-100 md:rounded-full py-[2vh] px-[1vw] md:min-h-fit min-h-[26vh] ${navOpen ? 'top-[8%]' : 'top-[-100%]'} md:w-auto w-full transition-all duration-500 ease-in-out`}>
-            <ul className='flex md:flex-row flex-col items-center md:gap-[0.5vw] gap-6'>
-
+          <div
+            className={`md:static fixed left-0 text-xl bg-gray-100 md:rounded-full py-[2vh] px-[1vw] md:min-h-fit min-h-[26vh] ${
+              navOpen ? 'top-[8%]' : 'top-[-100%]'
+            } md:w-auto w-full transition-all duration-500 ease-in-out`}
+          >
+            <ul className="flex md:flex-row flex-col items-center md:gap-[0.5vw] gap-6">
               <li>
-                <Link 
-                  className={`text-black py-[1vh] px-7 rounded-full ${activeLink === 'about' ? 'bg-blue-500' : 'hover:bg-blue-500'}`}
+                <Link
+                  className={`text-black py-[1vh] px-7 rounded-full ${
+                    activeLink === 'about' ? 'bg-blue-500' : 'hover:bg-blue-500'
+                  }`}
                   to="#about"
                   smooth
                   onClick={() => {
@@ -42,10 +56,11 @@ function Header() {
                   About
                 </Link>
               </li>
-
               <li>
                 <Link
-                  className={`text-black  py-[1vh] px-7 rounded-full  ${activeLink === 'skills' ? 'bg-blue-500' : 'hover:bg-blue-500'}`}
+                  className={`text-black py-[1vh] px-7 rounded-full  ${
+                    activeLink === 'skills' ? 'bg-blue-500' : 'hover:bg-blue-500'
+                  }`}
                   to="#skills"
                   smooth
                   onClick={() => {
@@ -56,10 +71,11 @@ function Header() {
                   Skills
                 </Link>
               </li>
-
               <li>
                 <Link
-                  className={`text-black py-[1vh] px-7 rounded-full  ${activeLink === 'projects' ? 'bg-blue-500' : 'hover:bg-blue-500'}`}
+                  className={`text-black py-[1vh] px-7 rounded-full  ${
+                    activeLink === 'projects' ? 'bg-blue-500' : 'hover:bg-blue-500'
+                  }`}
                   to="#projects"
                   smooth
                   onClick={() => {
@@ -70,29 +86,37 @@ function Header() {
                   Projects
                 </Link>
               </li>
-
               <li>
                 <Link
-                  className={`text-black py-[1vh] px-7 rounded-full  ${activeLink === 'contact' ? 'bg-blue-500' : 'hover:bg-blue-500'}`}
+                  className={`text-black py-[1vh] px-7 rounded-full  ${
+                    activeLink === 'contact' ? 'bg-blue-500' : 'hover:bg-blue-500'
+                  }`}
                   to="#contact"
                   smooth
                   onClick={() => {
                     handleClick('contact');
-                    toggleNav()
+                    toggleNav();
                   }}
                 >
                   Contact
                 </Link>
               </li>
-
             </ul>
           </div>
-        
 
-          <div onClick={toggleNav}>
-            <FontAwesomeIcon icon={icon} style={{ cursor: 'pointer' }} className='md:hidden h-6 flex items-center justify-center' />
+          <div className="flex">
+            <div className="text-2xl" onClick={toggleThemeIcon}>
+              <FontAwesomeIcon className="h-8 py-3 px-4 rounded-full cursor-pointer hover:bg-slate-100" icon={themeIcon} />
+            </div>
+
+            <div onClick={toggleNav}>
+              <FontAwesomeIcon
+                icon={icon}
+                style={{ cursor: 'pointer' }}
+                className="md:hidden h-6 flex items-center justify-center pt-1"
+              />
+            </div>
           </div>
-
         </nav>
       </header>
     </>
