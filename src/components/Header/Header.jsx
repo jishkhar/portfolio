@@ -106,7 +106,7 @@ function Header() {
 
           <div className="flex">
             <div className="text-2xl" onClick={toggleThemeIcon}>
-              <FontAwesomeIcon className="h-8 py-3 px-4 rounded-full cursor-pointer hover:bg-slate-100" icon={themeIcon} />
+              <FontAwesomeIcon className="h-8 md:py-3 px-4 rounded-full cursor-pointer hover:bg-slate-100" icon={themeIcon} />
             </div>
 
             <div onClick={toggleNav}>
