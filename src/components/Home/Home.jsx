@@ -18,7 +18,7 @@ function Home() {
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl pb-6">Jishnu Khargharia</h1>
 
       <h1 className="pb-8 sm:pb-12 md:pb-16 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">
-        <span style={{ color: 'green' }}>
+        <span style={{ color: '#1bcde4' }}>
           {text}
         </span>
         <Cursor />

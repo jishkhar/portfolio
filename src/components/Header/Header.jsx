@@ -30,13 +30,13 @@ function Header() {
       <header className="header mx-auto">
         <nav className="flex justify-between items-center w-[80%] my-[2.5vh] fixed lg:left-48 md:left-24 left-10">
           <div>
-            <Link to="#home" className="text-2xl font-bold" onClick={() => handleClick('')}>
+            <Link to="#home" className="text-3xl font-bold" onClick={() => handleClick('')}>
               JK
             </Link>
           </div>
 
           <div
-            className={`md:static fixed left-0 text-xl bg-gray-100 md:rounded-full py-[2vh] px-[1vw] md:min-h-fit min-h-[26vh] ${
+            className={`md:static fixed left-0 text-xl bg-gray-200 md:rounded-full py-[2vh] px-[1vw] md:min-h-fit min-h-[26vh] ${
               navOpen ? 'top-[8%]' : 'top-[-100%]'
             } md:w-auto w-full transition-all duration-500 ease-in-out`}
           >
@@ -44,7 +44,7 @@ function Header() {
               <li>
                 <Link
                   className={`text-black py-[1vh] px-7 rounded-full ${
-                    activeLink === 'about' ? 'bg-blue-500' : 'hover:bg-blue-500'
+                    activeLink === 'about' ? 'bg-cyan-200' : 'hover:bg-cyan-200'
                   }`}
                   to="#about"
                   smooth
@@ -59,7 +59,7 @@ function Header() {
               <li>
                 <Link
                   className={`text-black py-[1vh] px-7 rounded-full  ${
-                    activeLink === 'skills' ? 'bg-blue-500' : 'hover:bg-blue-500'
+                    activeLink === 'skills' ? 'bg-cyan-200' : 'hover:bg-cyan-200'
                   }`}
                   to="#skills"
                   smooth
@@ -74,7 +74,7 @@ function Header() {
               <li>
                 <Link
                   className={`text-black py-[1vh] px-7 rounded-full  ${
-                    activeLink === 'projects' ? 'bg-blue-500' : 'hover:bg-blue-500'
+                    activeLink === 'projects' ? 'bg-cyan-200' : 'hover:bg-cyan-200'
                   }`}
                   to="#projects"
                   smooth
@@ -89,7 +89,7 @@ function Header() {
               <li>
                 <Link
                   className={`text-black py-[1vh] px-7 rounded-full  ${
-                    activeLink === 'contact' ? 'bg-blue-500' : 'hover:bg-blue-500'
+                    activeLink === 'contact' ? 'bg-cyan-200' : 'hover:bg-cyan-200'
                   }`}
                   to="#contact"
                   smooth

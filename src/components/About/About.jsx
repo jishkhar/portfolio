@@ -10,11 +10,11 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 function About() {
   return (
-    <section id="about" className="py-28 sm:py-48 h-fit flex justify-center items-center">
+    <section id="about" className="py-28 sm:py-48 h-fit flex justify-center items-center bg-gray-100">
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center px-6 lg:px-20">
         <div className="w-full lg:w-5/12 flex justify-center lg:justify-center mb-8 lg:mb-0">
           <img
-            className="rounded-full h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 object-cover"
+            className="rounded-full h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 object-cover lg:mt-16  lg:ml-24"
             src={jk}
             alt="Jishnu Khargharia's image"
           />
