@@ -28,7 +28,7 @@ function Header() {
   return (
     <>
       <header className="header mx-auto">
-        <nav className="flex justify-between items-center w-[80%] my-[2.5vh] fixed lg:left-48 md:left-24 left-10">
+        <nav className="flex justify-between items-center w-[80%] my-[2.5vh] fixed lg:left-48 md:left-24 left-10  ">
           <div>
             <Link to="#home" className="text-3xl font-bold" onClick={() => handleClick('')}>
               JK
@@ -37,7 +37,7 @@ function Header() {
 
           <div
             className={`md:static fixed left-0 text-xl bg-gray-200 md:rounded-full py-[2vh] px-[1vw] md:min-h-fit min-h-[26vh] ${
-              navOpen ? 'top-[8%]' : 'top-[-100%]'
+              navOpen ? 'top-[10%]' : 'top-[-100%]'
             } md:w-auto w-full transition-all duration-500 ease-in-out`}
           >
             <ul className="flex md:flex-row flex-col items-center md:gap-[0.5vw] gap-6">
