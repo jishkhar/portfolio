@@ -4,13 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
 import { faX } from '@fortawesome/free-solid-svg-icons/faX';
 import { faMoon } from '@fortawesome/free-regular-svg-icons';
-import { faSun } from '@fortawesome/free-regular-svg-icons'; // Import faSun icon
+import { faSun } from '@fortawesome/free-regular-svg-icons'; 
 
 function Header() {
   const [activeLink, setActiveLink] = useState('');
   const [icon, setIcon] = useState(faBars);
   const [navOpen, setNavOpen] = useState(false);
-  const [themeIcon, setThemeIcon] = useState(faMoon); // Add state for theme icon
+  const [themeIcon, setThemeIcon] = useState(faMoon); 
 
   const handleClick = (link) => {
     setActiveLink(link);
@@ -22,7 +22,7 @@ function Header() {
   };
 
   const toggleThemeIcon = () => {
-    setThemeIcon((prevIcon) => (prevIcon === faMoon ? faSun : faMoon)); // Toggle between faMoon and faSun
+    setThemeIcon((prevIcon) => (prevIcon === faMoon ? faSun : faMoon));
   };
 
   return (

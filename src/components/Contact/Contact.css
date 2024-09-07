@@ -41,13 +41,11 @@ form .input-box{
 form button{
     width: 100%;
     height: 55px;
-    /* background-color: #2fc6de; */
     border: 2px solid #ddd;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-size: 16px;
-    /* color: #fff; */
     font-weight: 500;
     margin-top: 25px;
     transition: 0.3s;
@@ -55,23 +53,23 @@ form button{
 
 form button:hover{
     font-size: 18px;
+    background-color: #f0efef;
 }
 
 
 
 .contact {
-    padding: 20px; /* Adjust as needed */
+    padding: 20px;
 }
   
 .contact form {
-    margin: 40px auto; /* Center the form by default */
-    max-width: 600px; /* Set a max width for larger screens */
+    margin: 40px auto;
+    max-width: 600px; 
 }
-  
-  /* Add responsive margins */
+
 @media (max-width: 768px) {
     .contact form {
-        margin: 40px 20px; /* Add horizontal margins on smaller screens */
+        margin: 40px 20px;
     }
     .contact h1{
         font-size: 3rem;
@@ -80,7 +78,7 @@ form button:hover{
   
 @media (max-width: 480px) {
     .contact form {
-        margin: 40px 10px; /* Add smaller horizontal margins on very small screens */
+        margin: 40px 10px;
     }
     .contact h1{
         font-size: 2.25rem;
